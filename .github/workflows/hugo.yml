@@ -30,9 +30,8 @@ jobs:
 
     - name: Build the site
       run: |
-        hugo \
-          --gc \
-          --minify
+        hugo --gc --minify
+        ls -la ./public 
 
   # Deployment job
   deploy:
