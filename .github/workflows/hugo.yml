@@ -29,7 +29,6 @@ jobs:
         hugo-version: 'latest'
 
     - name: Build the site
-      run: hugo --minify
       run: |
         hugo \
           --gc \
