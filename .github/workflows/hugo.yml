@@ -33,6 +33,12 @@ jobs:
         hugo --gc --minify
         ls -la ./public 
 
+    - name: Upload public folder as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: public-folder
+        path: ./public
+
   # Deployment job
   deploy:
     runs-on: ubuntu-latest
@@ -41,6 +47,12 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
+
+    - name: Download public folder artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: public-folder
+        path: ./public
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
