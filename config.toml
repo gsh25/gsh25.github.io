@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "SRE Blog!"
 theme = "archie"
 paginate = 5 
-Copyright = "© 2023 Shibhi"
+Copyright = "© 2023 gsh25"
 canonifyurls = true
 # Code Highlight
 pygmentsstyle = "monokai"
@@ -21,7 +21,7 @@ pygmentscodefencesguesssyntax = true
 [[params.social]]
 name = "GitHub"
 icon = "github"
-url = "https://github.com/shibhikkiran"
+url = "https://github.com/gsh25"
 
 [[menu.main]]
 name = "Home"
