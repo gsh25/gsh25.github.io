@@ -1,4 +1,4 @@
-baseURL = "https://gsh25.github.io/"
+baseURL = "https://blog.gobash.in/"
 languageCode = "en-us"
 title = "SRE Blog!"
 theme = "archie"
